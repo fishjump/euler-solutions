@@ -49,7 +49,7 @@ executable Problem0003
     main-is:          Problem0003.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -61,7 +61,7 @@ executable Problem0004
     main-is:          Problem0004.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -100,7 +100,7 @@ executable Problem0007
     main-is:          Problem0007.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:

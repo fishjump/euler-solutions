@@ -1,20 +1,13 @@
 module Main where
 
 import Data.Function ((&))
+import EulerUtils (isDivisibleBy, isPrime)
 
 -- Largest prime factor
 
 -- The prime factors of 13195 are 5, 7, 13 and 29.
 
 -- What is the largest prime factor of the number 600851475143 ?
-
-isDivisibleBy :: Integral a => a -> a -> Bool
-isDivisibleBy x y = (x `mod` y) == 0
-
-isPrime :: Integral a => a -> Bool
-isPrime x
-  | x < 1 = False
-  | otherwise = [2 .. (x `div` 2)] & not . any (x `isDivisibleBy`)
 
 greatestPrimeFactor :: Integral t => t -> t
 greatestPrimeFactor x = f x 2
