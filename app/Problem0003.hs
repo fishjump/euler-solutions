@@ -1,5 +1,7 @@
 module Main where
 
+import Data.Function ((&))
+
 -- Largest prime factor
 
 -- The prime factors of 13195 are 5, 7, 13 and 29.
@@ -10,9 +12,9 @@ isDivisibleBy :: Integral a => a -> a -> Bool
 isDivisibleBy x y = (x `mod` y) == 0
 
 isPrime :: Integral a => a -> Bool
-isPrime 1 = True
-isPrime 2 = True
-isPrime x = not $ any (x `isDivisibleBy`) [2 .. (x `div` 2 + 1)]
+isPrime x
+  | x < 1 = False
+  | otherwise = [2 .. (x `div` 2)] & not . any (x `isDivisibleBy`)
 
 greatestPrimeFactor :: Integral t => t -> t
 greatestPrimeFactor x = f x 2
