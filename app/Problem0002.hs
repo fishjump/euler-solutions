@@ -1,3 +1,5 @@
+{-# LANGUAGE NumericUnderscores #-}
+
 module Main where
 
 import Data.Function ((&))
@@ -25,7 +27,7 @@ fibSeq i max
     fib_i = fibonacci i
 
 fibSeqLessThan4M :: [Integer]
-fibSeqLessThan4M = fibSeq 1 4000000
+fibSeqLessThan4M = fibSeq 1 4_000_000
 
 main :: IO ()
 main = print $ fibSeqLessThan4M & filter even & sum
