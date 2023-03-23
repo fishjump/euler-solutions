@@ -25,7 +25,7 @@ executable Problem0001
     main-is:          Problem0001.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -37,7 +37,7 @@ executable Problem0002
     main-is:          Problem0002.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -76,7 +76,7 @@ executable Problem0005
     main-is:          Problem0005.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -88,7 +88,7 @@ executable Problem0006
     main-is:          Problem0006.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    EulerUtils
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -110,6 +110,18 @@ executable Problem0007
 
 executable Problem0008
     main-is:          Problem0008.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:    EulerUtils
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.16.4.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable Problem0009
+    main-is:          Problem0009.hs
 
     -- Modules included in this executable, other than Main.
     other-modules:    EulerUtils
