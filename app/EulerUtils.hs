@@ -10,8 +10,10 @@ isUndivisibleBy x y = (x `mod` y) /= 0
 
 isPrime :: Integral a => a -> Bool
 isPrime x
-  | x < 1 = False
-  | otherwise = [2 .. (x `div` 2)] & all (x `isUndivisibleBy`)
+  | x <= 1 = False
+  | otherwise = [2 .. intSqrt2 x] & all (x `isUndivisibleBy`)
+  where
+    intSqrt2 = floor . sqrt . fromIntegral
 
 digits :: Integral t => t -> [t]
 digits x
